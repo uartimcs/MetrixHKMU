@@ -25,6 +25,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+// Push to github https://github.com/uartimcs/368
+
 //1. Annotation for indicating this is an entity class
 @Entity
 @Data
