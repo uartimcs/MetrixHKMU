@@ -55,7 +55,8 @@ public class Tickets implements Serializable {
     private Date sellDtm;
 
     //6d. Annotation indicating this field in DB is not nullable
-    //Change to nullable in Wtsapp group. This field does not take any action.
+    //Change to nullable in Wtsapp group. This field does not set when creating new ticket.
+    //Only with date when claimed via QRCode.
     @Column(nullable = true)    
     //7b. Annotation for checking this field value should be a past date, if not, view will show error message "Claim date time must be a past date time"
     @Past(message = "Claim date time must be a past date time")
